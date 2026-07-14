@@ -1,0 +1,8 @@
+name = "uboontu-foundation"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "uboontu"
+database_id = "587e6e73-fcd7-4fab-b0ad-ef93c15769c7"
