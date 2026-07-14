@@ -167,7 +167,7 @@ export default function PartnerPage() {
       <section className="trusted-brands-section">
         <div className="trusted-brands-container">
           <h2 className="trusted-brands-title">
-            Trusted by 200+ of the world's top brands
+            Trusted by 200+ of the world&apos;s top brands
           </h2>
           
           <div className="brands-marquee-wrapper">

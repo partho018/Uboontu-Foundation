@@ -560,7 +560,7 @@ export default function Home() {
               {[client1, client2, client3, client4, client1, client2, client3, client4].map((img, i) => (
                 <div className="scrolling-card" key={`r1-${i}`}>
                   <p className="scrolling-text">
-                    "Working with Uboontu was a great experience. They were responsible, communicative, and delivered excellent design work. Their team really understood our vision and translated it into a product that exceeded our expectations in every way possible."
+                    &ldquo;Working with Uboontu was a great experience. They were responsible, communicative, and delivered excellent design work. Their team really understood our vision and translated it into a product that exceeded our expectations in every way possible.&rdquo;
                   </p>
                   <div className="scrolling-author">
                     <img src={getSrc(img)} alt="Client" className="author-img" loading="lazy" decoding="async" />
@@ -579,7 +579,7 @@ export default function Home() {
               {[client5, client6, client7, client8, client5, client6, client7, client8].map((img, i) => (
                 <div className="scrolling-card" key={`r2-${i}`}>
                   <p className="scrolling-text">
-                    "Uboontu is a professional, reliable partner for end-to-end product builds. From clean, modern designs to seamless systems, they handled everything with total professionalism. I couldn't be happier with our collaboration on this complex project."
+                    &ldquo;Uboontu is a professional, reliable partner for end-to-end product builds. From clean, modern designs to seamless systems, they handled everything with total professionalism. I couldn&apos;t be happier with our collaboration on this complex project.&rdquo;
                   </p>
                   <div className="scrolling-author">
                     <img src={getSrc(img)} alt="Client" className="author-img" loading="lazy" decoding="async" />
@@ -598,7 +598,7 @@ export default function Home() {
               {[client3, client5, client1, client7, client3, client5, client1, client7].map((img, i) => (
                 <div className="scrolling-card" key={`r3-${i}`}>
                   <p className="scrolling-text">
-                    "They translated our business goals into clean, aesthetic designs with total transparency. The team is patient, committed, and a highly recommended design partner for any company looking to elevate their digital presence significantly."
+                    &ldquo;They translated our business goals into clean, aesthetic designs with total transparency. The team is patient, committed, and a highly recommended design partner for any company looking to elevate their digital presence significantly.&rdquo;
                   </p>
                   <div className="scrolling-author">
                     <img src={getSrc(img)} alt="Client" className="author-img" loading="lazy" decoding="async" />

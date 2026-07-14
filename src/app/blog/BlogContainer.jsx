@@ -240,7 +240,7 @@ export default function BlogContainer() {
         ) : (
           <div className="blogs-empty">
             <span>🔍</span>
-            <p>No posts found for "<strong>{search}</strong>"</p>
+            <p>No posts found for &quot;<strong>{search}</strong>&quot;</p>
           </div>
         )}
       </section>
