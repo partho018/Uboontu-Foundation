@@ -787,8 +787,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── NEWSLETTER SECTION ─── */}
-      <section className="blogs-newsletter-section" style={{ paddingBottom: '60px', paddingTop: '30px' }}>
+      <section className="blogs-newsletter-section" style={{ paddingBottom: '120px', paddingTop: '30px' }}>
         <div className="blogs-newsletter-container">
           <div className="blogs-newsletter-banner" style={{ backgroundImage: `url('/image (2).webp')` }}>
             <span className="blogs-newsletter-badge">Newsletter</span>
