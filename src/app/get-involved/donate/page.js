@@ -52,7 +52,7 @@ export default function DonatePage() {
               <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
                 <HandHeart size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Donate
               </span>
-              <h1 className="gi-split-title">Support Our Cause</h1>
+              <h1 className="gi-split-title">Support Our <span className="elegant-serif">Cause</span></h1>
               <p className="gi-split-subtitle">
                 Every contribution helps us build cleaner communities, promote circular economics, and empower citizens through green education.
               </p>
@@ -75,7 +75,7 @@ export default function DonatePage() {
             {!submitted ? (
               <>
                 <div className="gi-form-header">
-                  <h2>Donation Inquiry & Pledge</h2>
+                  <h2>Donation Inquiry & <span className="elegant-serif">Pledge</span></h2>
                   <p>Submit a donation pledge or make an inquiry about our environmental projects.</p>
                 </div>
                 

@@ -103,7 +103,7 @@ export default function ContactContainer() {
           <span className="contact-eyebrow">
             <MessageSquare size={16} /> Get In Touch
           </span>
-          <h1 className="contact-title">Contact Uboontu Foundation</h1>
+          <h1 className="contact-title">Contact Uboontu <span className="elegant-serif">Foundation</span></h1>
           <p className="contact-subtitle">
             Have questions, feedback, or want to partner with us? Reach out and our team will get back to you shortly.
           </p>
@@ -118,7 +118,7 @@ export default function ContactContainer() {
             {/* Left Column: Contact Info */}
             <div className="contact-info-wrap scroll-reveal reveal-fade-right">
               <div className="contact-info-header">
-                <h2>Reach Out to Us</h2>
+                <h2>Reach Out to <span className="elegant-serif">Us</span></h2>
                 <p>We are always open to discuss waste management solutions, community cleanups, environmental education programs, and CSR campaigns.</p>
               </div>
 
@@ -211,7 +211,7 @@ export default function ContactContainer() {
               {!isSubmitted ? (
                 <div className="contact-form-card glass-panel">
                   <div className="contact-form-header">
-                    <h2>Send Us a Message</h2>
+                    <h2>Send Us a <span className="elegant-serif">Message</span></h2>
                     <p>Fill out the form below and our team will get in touch with you shortly.</p>
                   </div>
                   

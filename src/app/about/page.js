@@ -21,7 +21,7 @@ export default function AboutPage() {
         </div>
         <div className="container">
           <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
-            <h1 className="about-title">Who We Are</h1>
+            <h1 className="about-title">Who We <span className="elegant-serif">Are</span></h1>
             <p className="about-desc-lead">
               Uboontu Foundation is committed to creating environmentally responsible communities through practical and scalable sustainability solutions. Our work focuses on solid waste management, behavior change communication, recycling systems, biodiversity restoration, and climate action initiatives.
             </p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
       <section className="projects-section">
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
-            <h2>Projects</h2>
+            <h2><span className="elegant-serif">Projects</span></h2>
             <p>
               Starting our journey in Delhi, we are now implementing projects across multiple cities, including Delhi, Noida, Gurugram, and Ranthambore, among others. Our strategically diversified geographic presence acts as a safeguard, reducing risks linked to regional dependencies and ensuring resilience against fluctuations arising from concentrated operations in limited areas.
             </p>
@@ -152,7 +152,7 @@ export default function AboutPage() {
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge badge-accent">Awards & Recognitions</span>
-            <h2>Our Achievements</h2>
+            <h2>Our <span className="elegant-serif">Achievements</span></h2>
           </div>
           
           <div className="awards-layout">

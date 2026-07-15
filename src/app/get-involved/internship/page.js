@@ -54,7 +54,7 @@ export default function InternshipPage() {
               <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
                 <Award size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Internship
               </span>
-              <h1 className="gi-split-title">Internship Opportunities</h1>
+              <h1 className="gi-split-title">Internship <span className="elegant-serif">Opportunities</span></h1>
               <p className="gi-split-subtitle">
                 Work on real-world environmental sustainability and waste management initiatives to advance your professional skills.
               </p>
@@ -77,7 +77,7 @@ export default function InternshipPage() {
             {!submitted ? (
               <>
                 <div className="gi-form-header">
-                  <h2>Internship Application</h2>
+                  <h2>Internship <span className="elegant-serif">Application</span></h2>
                   <p>Apply for a structured, hands-on sustainability internship program.</p>
                 </div>
                 

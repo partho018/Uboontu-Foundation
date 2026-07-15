@@ -128,7 +128,7 @@ export default function BlogContainer() {
           <h1 className="blogs-hero-title">
             Your Go-To Source:
             <br />
-            <em>Blog Highlights &amp; More</em>
+            Blog Highlights &amp; <span className="elegant-serif">More</span>
           </h1>
           <div className="blogs-search-wrap">
             <svg className="blogs-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

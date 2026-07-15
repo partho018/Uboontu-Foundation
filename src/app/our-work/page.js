@@ -62,7 +62,7 @@ export default function OurWorkPage() {
             <span className="our-work-eyebrow">
               <Briefcase size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Our Impact
             </span>
-            <h1 className="our-work-title">Our Work</h1>
+            <h1 className="our-work-title">Our <span className="elegant-serif">Work</span></h1>
             <h3 className="our-work-subtitle">Driving Sustainable Change Through Action</h3>
             <p className="our-work-desc">
               At Uboontu Foundation, we work towards building cleaner, healthier, and more sustainable communities through practical environmental solutions and community-driven initiatives. Our projects focus on waste management, environmental awareness, circular economy practices, and climate-conscious community development.
@@ -77,7 +77,7 @@ export default function OurWorkPage() {
           <div className="projects-container">
             {/* Header */}
             <div className="work-projects-header scroll-reveal reveal-fade-up">
-              <h2>Projects</h2>
+              <h2><span className="elegant-serif">Projects</span></h2>
               <p>Explore the active campaigns, on-ground implementations, and circular initiatives that make up our green mission.</p>
             </div>
 

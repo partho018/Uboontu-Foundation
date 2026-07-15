@@ -52,7 +52,7 @@ export default function VolunteerPage() {
               <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
                 <Users size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Volunteer
               </span>
-              <h1 className="gi-split-title">Volunteer With Us</h1>
+              <h1 className="gi-split-title">Volunteer With <span className="elegant-serif">Us</span></h1>
               <p className="gi-split-subtitle">
                 Join the movement towards cleaner, healthier, and more sustainable communities through your skills, time, and action.
               </p>
@@ -75,7 +75,7 @@ export default function VolunteerPage() {
             {!submitted ? (
               <>
                 <div className="gi-form-header">
-                  <h2>Volunteer Registration</h2>
+                  <h2>Volunteer <span className="elegant-serif">Registration</span></h2>
                   <p>Register as a volunteer to join our on-ground campaigns and events.</p>
                 </div>
                 

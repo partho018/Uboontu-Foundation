@@ -147,7 +147,7 @@ export default function PartnerPage() {
               <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
                 <Building2 size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Partner
               </span>
-              <h1 className="gi-split-title">Partner With Us</h1>
+              <h1 className="gi-split-title">Partner With <span className="elegant-serif">Us</span></h1>
               <p className="gi-split-subtitle">
                 CSR collaborations, grants, and organizational partnerships to empower communities through effective Public-Private Partnerships (PPP).
               </p>
@@ -219,7 +219,7 @@ export default function PartnerPage() {
             {!submitted ? (
               <>
                 <div className="gi-form-header">
-                  <h2>Partnership Inquiry</h2>
+                  <h2>Partnership <span className="elegant-serif">Inquiry</span></h2>
                   <p>Partner with Uboontu Foundation to drive sustainable change.</p>
                 </div>
                 

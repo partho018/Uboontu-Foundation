@@ -186,7 +186,16 @@ export default function SingleBlogContainer({ slug }) {
           </div>
 
           <h1 className="single-blog-title">
-            {post.title}
+            {post.title ? (() => {
+              const words = post.title.trim().split(' ');
+              if (words.length <= 1) return post.title;
+              const lastWord = words.pop();
+              return (
+                <>
+                  {words.join(' ')} <span className="elegant-serif">{lastWord}</span>
+                </>
+              );
+            })() : ''}
           </h1>
 
           <div className="single-blog-meta-container">

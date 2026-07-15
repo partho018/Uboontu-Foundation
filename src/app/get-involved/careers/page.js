@@ -52,7 +52,7 @@ export default function CareersPage() {
               <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
                 <Briefcase size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Careers
               </span>
-              <h1 className="gi-split-title">Work With Us</h1>
+              <h1 className="gi-split-title">Work With <span className="elegant-serif">Us</span></h1>
               <p className="gi-split-subtitle">
                 Join a team of dedicated professionals and create measurable environmental and social impact on-ground.
               </p>
@@ -75,7 +75,7 @@ export default function CareersPage() {
             {!submitted ? (
               <>
                 <div className="gi-form-header">
-                  <h2>Job Application Form</h2>
+                  <h2>Job Application <span className="elegant-serif">Form</span></h2>
                   <p>Apply for open roles or submit your profile to our talent pool.</p>
                 </div>
                 
