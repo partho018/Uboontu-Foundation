@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import "./page.css";
 import "./about/about.css";
@@ -8,13 +7,6 @@ import "./blog/blog.css";
 import "./contact/contact.css";
 import MainLayout from "@/components/MainLayout";
 import StyledJsxRegistry from "./registry";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
-  display: "swap",
-});
 
 export const metadata = {
   title: "Uboontu Foundation | Transforming Waste into Opportunity",
@@ -28,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
+    <html lang="en">
       <body>
         <StyledJsxRegistry>
           <MainLayout>{children}</MainLayout>

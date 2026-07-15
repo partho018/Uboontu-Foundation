@@ -426,7 +426,7 @@ export default function Home() {
               </div>
 
               <h1 className="hero-title">
-                Transforming Waste into <span className="text-gradient-glow">Opportunity</span>
+                Transforming Waste into <span className="text-gradient-glow elegant-serif">Opportunity</span>
               </h1>
 
               <p className="hero-subtitle">Building Cleaner Communities Through Sustainable Waste Management</p>
@@ -461,7 +461,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge">What We Do</span>
-            <h2>Our Core Services</h2>
+            <h2>Our Core <span className="elegant-serif">Services</span></h2>
             <p>Comprehensive systems and methodologies that build sustainable, zero-waste ecosystems for a greener tomorrow.</p>
           </div>
 
@@ -505,7 +505,7 @@ export default function Home() {
           <div className="sdg-header-split">
             <div className="sdg-header-left scroll-reveal reveal-fade-up">
               <span className="badge badge-accent">SDG Alignment</span>
-              <h2>Sustainable Development Goals</h2>
+              <h2>Sustainable Development <span className="elegant-serif">Goals</span></h2>
               <p className="sdg-header-desc">
                 Achieving the Sustainable Development Goals requires urgent action to address climate change, biodiversity loss, and waste. 
                 Uboontu offers a unique opportunity to drive meaningful, cross-cutting impact across diverse sectors and communities.
@@ -580,7 +580,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge badge-secondary">Solutions Flow</span>
-            <h2>Providing End-to-End Waste Management Solutions</h2>
+            <h2>Providing End-to-End Waste Management <span className="elegant-serif">Solutions</span></h2>
             <p>How we bridge the gap between waste generation and secondary raw material manufacturing.</p>
           </div>
 
@@ -604,7 +604,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge badge-primary">Impact till 2025–26</span>
-            <h2>Providing End-to-End Waste Management Solutions</h2>
+            <h2>Providing End-to-End Waste Management <span className="elegant-serif">Solutions</span></h2>
           </div>
 
           {/* Tab Navigation */}
@@ -679,7 +679,7 @@ export default function Home() {
         <div className="fp-stack-content">
           <div className="section-header scroll-reveal reveal-fade-up" style={{ textAlign: 'left', alignItems: 'flex-start', margin: '0' }}>
             <span className="badge badge-accent">Portfolio</span>
-            <h2 className="fp-stack-section-title" style={{ fontSize: '3rem', fontWeight: '850', color: 'var(--text-primary)', margin: '0' }}>Featured Projects</h2>
+            <h2 className="fp-stack-section-title" style={{ fontSize: '3rem', fontWeight: '700', color: 'var(--text-primary)', margin: '0' }}>Featured <span className="elegant-serif">Projects</span></h2>
             <p className="fp-stack-section-desc" style={{ marginTop: '16px', maxWidth: '800px', fontSize: '1.1rem', color: 'var(--text-secondary)', lineHeight: '1.6' }}>Active initiatives driving local community circularity, clean cities, and worker dignity.</p>
           </div>
 
@@ -724,7 +724,7 @@ export default function Home() {
       <section className="referral-section">
         <div className="referral-container">
           <span className="referral-badge">Voices of Impact</span>
-          <h2 className="referral-title">Testimonials</h2>
+          <h2 className="referral-title"><span className="elegant-serif">Testimonials</span></h2>
           <p className="referral-subtitle">Feedback from our valued partners and community members.</p>
         </div>
         <div className="scrolling-container">
