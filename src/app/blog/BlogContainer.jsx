@@ -165,8 +165,8 @@ export default function BlogContainer() {
 
         {/* Loading / Grid / Empty state */}
         {loading ? (
-          <div className="blogs-loading" style={{ textAlign: 'center', padding: '60px', color: '#333', fontSize: '18px' }}>
-            <div className="loading-spinner" style={{ border: '4px solid rgba(0,0,0,0.1)', borderLeft: '4px solid #682EE6', borderRadius: '50%', width: '40px', height: '40px', margin: '0 auto 20px', animation: 'spin 1s linear infinite' }}></div>
+          <div className="blogs-loading" style={{ textAlign: 'center', padding: '60px', color: 'var(--text-primary)', fontSize: '18px' }}>
+            <div className="loading-spinner" style={{ border: '4px solid var(--border-color)', borderLeft: '4px solid var(--primary)', borderRadius: '50%', width: '40px', height: '40px', margin: '0 auto 20px', animation: 'spin 1s linear infinite' }}></div>
             <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
             <p>Loading blogs...</p>
           </div>

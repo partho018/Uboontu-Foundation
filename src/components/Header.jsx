@@ -152,10 +152,6 @@ export default function Header({ onDonateClick, onPartnerClick }) {
 
           {/* Action Buttons */}
           <div className="actions">
-            <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle theme">
-              {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
-            </button>
-
             <Link href="/get-involved/donate" className="btn-action donate-btn">
               <Heart size={16} fill="currentColor" style={{ flexShrink: 0 }} /> <span>Donate</span>
             </Link>
@@ -193,9 +189,6 @@ export default function Header({ onDonateClick, onPartnerClick }) {
             />
           </Link>
           <div className="mobile-drawer-actions">
-            <button onClick={toggleTheme} className="theme-toggle-btn" aria-label="Toggle theme" style={{ border: 'none' }}>
-              {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
-            </button>
             <button
               className="mobile-close-btn"
               onClick={() => setMobileMenuOpen(false)}

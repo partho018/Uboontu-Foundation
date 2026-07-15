@@ -22,46 +22,175 @@ const client7 = '/Clint/697c78b3798750901911bb75_Client_Anika _916.avif';
 const client8 = '/Clint/69a044959b8bba79e7629219_Client_Tanmee _916.avif';
 
 // ─── SDG Grouped Data ───────────────────────────────────────────────────────
+// ─── SDG Grouped Data ───────────────────────────────────────────────────────
 const sdgGroups = [
   {
-    numbers: [1],
-    color: '#e5243b',
-    bgColor: 'rgba(229, 36, 59, 0.12)',
+    number: 1,
     theme: 'No Poverty',
-    icon: HeartHandshake,
-    desc: 'Assuring regular income to the Safai Sathis — securing livelihoods for the informal waste workers who are the backbone of our collection system.',
+    color: '#e5243b',
+    image: '/14 GOALS/img-goal-1.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-01.jpg',
+    desc: 'End poverty in all its forms everywhere.',
+    targets: 7,
+    events: 157,
+    publications: 51,
+    actions: 1580,
   },
   {
-    numbers: [5, 8, 10],
+    number: 3,
+    theme: 'Good Health and Well-being',
+    color: '#4c9f38',
+    image: '/14 GOALS/img-goal-3.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-03.jpg',
+    desc: 'Ensure healthy lives and promote well-being for all.',
+    targets: 13,
+    events: 240,
+    publications: 85,
+    actions: 2100,
+  },
+  {
+    number: 5,
+    theme: 'Gender Equality',
     color: '#ff3a21',
-    bgColor: 'rgba(255, 58, 33, 0.12)',
-    theme: 'Inclusion & Dignity',
-    icon: Users,
-    desc: 'Inclusion of the unorganized sector and working for their dignity and improved livelihoods — ensuring gender equity, decent work, and reduced inequalities.',
+    image: '/14 GOALS/img-goal-5.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-05.jpg',
+    desc: 'Achieve gender equality and empower all women and girls.',
+    targets: 9,
+    events: 115,
+    publications: 38,
+    actions: 980,
   },
   {
-    numbers: [7, 9, 11, 12],
+    number: 6,
+    theme: 'Clean Water and Sanitation',
+    color: '#26b3c4',
+    image: '/14 GOALS/img-goal-6.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-06.jpg',
+    desc: 'Ensure access to water and sanitation for all.',
+    targets: 8,
+    events: 165,
+    publications: 48,
+    actions: 1350,
+  },
+  {
+    number: 7,
+    theme: 'Affordable and Clean Energy',
+    color: '#f2bc1c',
+    image: '/14 GOALS/img-goal-7.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-07.jpg',
+    desc: 'Ensure access to affordable, reliable, sustainable and modern energy.',
+    targets: 5,
+    events: 98,
+    publications: 32,
+    actions: 850,
+  },
+  {
+    number: 8,
+    theme: 'Decent Work and Economic Growth',
+    color: '#a21942',
+    image: '/14 GOALS/img-goal-8.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-08.jpg',
+    desc: 'Promote sustained, inclusive and sustainable economic growth.',
+    targets: 12,
+    events: 180,
+    publications: 55,
+    actions: 1720,
+  },
+  {
+    number: 9,
+    theme: 'Industry, Innovation and Infrastructure',
     color: '#fd6925',
-    bgColor: 'rgba(253, 105, 37, 0.12)',
-    theme: 'Circular Economy',
-    icon: Recycle,
-    desc: 'Advancing the circular economy by championing waste recycling, driving innovation in technology and energy utilization, and fostering long-term sustainability.',
+    image: '/14 GOALS/img-goal-9.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-09.jpg',
+    desc: 'Build resilient infrastructure, promote industrialization.',
+    targets: 8,
+    events: 145,
+    publications: 50,
+    actions: 1400,
   },
   {
-    numbers: [3, 6, 13, 14, 15],
+    number: 10,
+    theme: 'Reduced Inequalities',
+    color: '#dd1367',
+    image: '/14 GOALS/img-goal-10.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-10.jpg',
+    desc: 'Reduce inequality within and among countries.',
+    targets: 10,
+    events: 130,
+    publications: 41,
+    actions: 1150,
+  },
+  {
+    number: 11,
+    theme: 'Sustainable Cities and Communities',
+    color: '#fd9d24',
+    image: '/14 GOALS/img-goal-11.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-11.jpg',
+    desc: 'Make settlements safe, resilient and sustainable.',
+    targets: 10,
+    events: 210,
+    publications: 72,
+    actions: 1980,
+  },
+  {
+    number: 12,
+    theme: 'Responsible Consumption and Production',
+    color: '#bf8d2c',
+    image: '/14 GOALS/img-goal-12.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-12.jpg',
+    desc: 'Ensure sustainable consumption and production patterns.',
+    targets: 11,
+    events: 175,
+    publications: 58,
+    actions: 1650,
+  },
+  {
+    number: 13,
+    theme: 'Climate Action',
     color: '#3f7e44',
-    bgColor: 'rgba(63, 126, 68, 0.12)',
-    theme: 'Environmental Protection',
-    icon: Leaf,
-    desc: 'Driving environmental responsibility by minimizing landfill waste, lowering greenhouse gas emissions, curbing marine litter, and ensuring safe waste management.',
+    image: '/14 GOALS/img-goal-13.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-13.jpg',
+    desc: 'Take urgent action to combat climate change.',
+    targets: 5,
+    events: 310,
+    publications: 112,
+    actions: 2850,
   },
   {
-    numbers: [17],
+    number: 14,
+    theme: 'Life Below Water',
+    color: '#0a97d9',
+    image: '/14 GOALS/img-goal-14.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-14.jpg',
+    desc: 'Conserve and sustainably use marine resources.',
+    targets: 10,
+    events: 115,
+    publications: 36,
+    actions: 920,
+  },
+  {
+    number: 15,
+    theme: 'Life on Land',
+    color: '#56c02b',
+    image: '/14 GOALS/img-goal-15.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-15.jpg',
+    desc: 'Protect, restore and promote sustainable use of ecosystems.',
+    targets: 12,
+    events: 190,
+    publications: 63,
+    actions: 1540,
+  },
+  {
+    number: 17,
+    theme: 'Partnerships for the Goals',
     color: '#19486a',
-    bgColor: 'rgba(25, 72, 106, 0.12)',
-    theme: 'Partnerships',
-    icon: HandshakeIcon,
-    desc: 'Fostering collaboration, engagement, and strategic partnerships at all levels, with a strong emphasis on promoting Public-Private Partnerships (PPP) for sustainable development.',
+    image: '/14 GOALS/img-goal-17.jpg',
+    iconImage: '/14 GOALS/E_SDG_Icons-17.jpg',
+    desc: 'Strengthen global partnership for sustainable development.',
+    targets: 19,
+    events: 380,
+    publications: 145,
+    actions: 3400,
   },
 ];
 
@@ -256,6 +385,35 @@ export default function Home() {
         <div className="hero-blob hero-blob-2" />
         <div className="hero-blob hero-blob-3" />
 
+        {/* Floating background decorative shapes */}
+        <div className="hero-bg-shapes">
+          <div className="shape shape-ring shape-ring-1" />
+          <div className="shape shape-ring shape-ring-2" />
+          <div className="shape shape-ring shape-ring-3" />
+          
+          <div className="shape shape-float shape-leaf-1">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="1.75">
+              <path d="M12 2C6.5 2 2 6.5 2 12c0 3.5 1.8 6.6 4.5 8.4l.5.3V18c0-3.3 2.7-6 6-6s6 2.7 6 6v2.7l.5-.3c2.7-1.8 4.5-4.9 4.5-8.4 0-5.5-4.5-10-10-10z" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div className="shape shape-float shape-recycle-1">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" strokeWidth="1.75">
+              <path d="M4.5 9.5 2 12h5l-2.5-2.5zM22 12h-5l2.5 2.5 2.5-2.5zM12 2v5l2.5-2.5L12 2z" />
+              <path d="M4.5 12c0 4.1 3.4 7.5 7.5 7.5s7.5-3.4 7.5-7.5S16.1 4.5 12 4.5" strokeLinecap="round" />
+            </svg>
+          </div>
+          <div className="shape shape-float shape-sparkle-1">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.75">
+              <path d="M12 3v18M3 12h18M12 3l3 4.5L12 12l-3-4.5L12 3zm0 9l3 4.5-3 4.5-3-4.5 3-4.5z" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+          <div className="shape shape-float shape-sparkle-2">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.75">
+              <path d="M12 3v18M3 12h18M12 3l3 4.5L12 12l-3-4.5L12 3zm0 9l3 4.5-3 4.5-3-4.5 3-4.5z" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
+        </div>
+
         <div className="container">
           <div className="hero-grid">
             {/* Left */}
@@ -343,65 +501,82 @@ export default function Home() {
         <div className="sdg-bg-blob sdg-blob-br" />
 
         <div className="container">
-          {/* Section Header Split */}
+          {/* Section Header */}
           <div className="sdg-header-split">
-            <div className="sdg-header-left scroll-reveal reveal-fade-right">
+            <div className="sdg-header-left scroll-reveal reveal-fade-up">
               <span className="badge badge-accent">SDG Alignment</span>
               <h2>Sustainable Development Goals</h2>
               <p className="sdg-header-desc">
-                A clean and healthy environment is required to achieve the Sustainable Development Goals. 
-                Efforts to counter the triple planetary crisis of climate change, nature and biodiversity loss, 
-                and pollution and waste must be ramped up in order to truly transform societies and economies for everyone, everywhere.
+                Achieving the Sustainable Development Goals requires urgent action to address climate change, biodiversity loss, and waste. 
+                Uboontu offers a unique opportunity to drive meaningful, cross-cutting impact across diverse sectors and communities.
               </p>
-              <p className="sdg-header-desc">
-                Uboontu offers a unique, cross-cutting opportunity to make meaningful contributions across diverse sectors and communities.
-              </p>
-            </div>
-            <div className="sdg-header-right scroll-reveal reveal-fade-left">
-              <div className="sdg-img-wrapper">
-                <img 
-                  src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" 
-                  alt="Sustainable Development Goals" 
-                  className="sdg-header-img"
-                />
-              </div>
             </div>
           </div>
 
           <div className="sdg-workspace">
-            {/* Right Side: Sleek Interactive SDG Cards */}
+            {/* 6-Column SDG Cards Grid */}
             <div className="sdg-list">
-              {sdgGroups.map((group, i) => {
-                const GroupIcon = group.icon;
-                return (
-                  <div key={i} className={`sdg-group-row glass-panel scroll-reveal reveal-blur-in delay-${(i % 5 + 1) * 100}`} style={{ '--group-color': group.color }}>
-                    <div className="sdg-group-icon-wrap" style={{ background: group.bgColor, color: group.color }}>
-                      <GroupIcon size={24} />
-                    </div>
-                    
-                    <div className="sdg-group-details">
-                      <div className="sdg-group-header">
-                        <h3 className="sdg-group-title" style={{ color: group.color }}>{group.theme}</h3>
-                        <div className="sdg-group-goals">
-                          {group.numbers.map(n => (
-                            <span key={n} className="sdg-goal-badge" style={{ background: group.color }}>
-                              Goal {n}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <p className="sdg-group-desc">{group.desc}</p>
+              {sdgGroups.map((group, i) => (
+                <div 
+                  key={i} 
+                  className={`sdg-card-item scroll-reveal reveal-fade-up delay-${(i + 1) * 100}`} 
+                  style={{ '--group-color': group.color }}
+                >
+                  <div className="sdg-card-image-wrap">
+                    <div 
+                      className="sdg-card-bg-image" 
+                      style={{ backgroundImage: `url("${group.image}")` }} 
+                    />
+                    <div className="sdg-card-overlay" />
+                  </div>
+                  
+                  <div className="sdg-card-icon-container">
+                    <img 
+                      src={group.iconImage} 
+                      alt={group.theme} 
+                      className="sdg-card-icon-img" 
+                    />
+                    <div className={`sdg-card-icon-mask ${i + 1 >= 10 ? 'double-digit' : 'single-digit'} ${[6, 8, 9].includes(i + 1) ? 'extra-cover' : ''} ${[10, 12].includes(i + 1) ? 'shift-left' : ''} ${i + 1 === 5 ? 'shift-right' : ''} ${i + 1 === 8 ? 'shift-right-8' : ''}`}>
+                      {i + 1}
                     </div>
                   </div>
-                );
-              })}
+
+                  <div className="sdg-card-hover-overlay">
+                    <div className="sdg-hover-number">{i + 1}</div>
+                    <div className="sdg-hover-content">
+                      <h3 className="sdg-hover-title">Goal {i + 1}</h3>
+                      <p className="sdg-hover-desc">{group.desc}</p>
+                      <div className="sdg-hover-divider" />
+                      <div className="sdg-hover-stats">
+                        <div className="sdg-stat-item">
+                          <span className="sdg-stat-val">{group.targets}</span>
+                          <span className="sdg-stat-lbl">Targets</span>
+                        </div>
+                        <div className="sdg-stat-item">
+                          <span className="sdg-stat-val">{group.events}</span>
+                          <span className="sdg-stat-lbl">Events</span>
+                        </div>
+                        <div className="sdg-stat-item">
+                          <span className="sdg-stat-val">{group.publications}</span>
+                          <span className="sdg-stat-lbl">Publications</span>
+                        </div>
+                        <div className="sdg-stat-item">
+                          <span className="sdg-stat-val">{group.actions}</span>
+                          <span className="sdg-stat-lbl">Actions</span>
+                        </div>
+                      </div>
+                      <div className="sdg-hover-btn">More info</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* ═══════════════ END-TO-END SOLUTIONS (Workflow) ════════════════════ */}
-      <section className="section bg-alt">
+      <section className="section bg-alt workflow-section">
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge badge-secondary">Solutions Flow</span>
@@ -459,18 +634,16 @@ export default function Home() {
                   <div className="impact-card-img-wrapper">
                     <img src={card.image} alt={card.title} className="impact-tile-img" />
                   </div>
-                  <div className="impact-tile-icon-wrap">
-                    <Icon size={18} />
-                  </div>
                   <div className="impact-tile-content">
+                    {card.sub && (
+                      <span className="impact-tile-badge">
+                        <Icon size={14} className="impact-badge-icon" />
+                        {card.sub}
+                      </span>
+                    )}
                     <h3 className="impact-tile-title">{card.title}</h3>
                     {card.desc && (
                       <p className="impact-tile-desc">{card.desc}</p>
-                    )}
-                    {card.sub && (
-                      <span className="impact-tile-badge">
-                        {card.sub}
-                      </span>
                     )}
                   </div>
                 </div>

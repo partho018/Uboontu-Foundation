@@ -3,7 +3,8 @@
 /* ─── PAGE WRAPPER ─── */
 .blogs-page {
     min-height: 100vh;
-    background: #ffffff;
+    background: var(--bg-primary);
+    color: var(--text-primary);
     font-family: 'Inter', sans-serif;
     overflow-x: clip;
 }
@@ -118,13 +119,13 @@
     max-width: 572px;
     height: 57px;
     min-height: 57px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border-color);
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 .blogs-search-wrap:focus-within {
-    border-color: #3898EC;
-    box-shadow: 0 4px 20px rgba(56,152,236,0.15);
+    border-color: var(--primary);
+    box-shadow: 0 4px 20px rgba(59, 184, 82, 0.15);
 }
 .blogs-search-icon {
     position: absolute;
@@ -156,7 +157,7 @@
 
 /* ─── BLOG LISTING SECTION ─── */
 .blogs-listing {
-    background: #ffffff;
+    background: var(--bg-primary);
     padding: 40px 0 80px;
 }
 
@@ -181,10 +182,10 @@
 
 .blogs-cat-btn {
     padding: 8px 18px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
-    background: #f5f5f5;
-    color: #6b7280;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
     font-size: 14px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
@@ -194,14 +195,14 @@
     margin: 0 4px;
 }
 .blogs-cat-btn:hover {
-    color: #111827;
-    background: #ebebeb;
-    border-color: #d0d0d0;
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
 }
 .blogs-cat-btn.active {
     color: #ffffff;
-    background: #7D40FF;
-    border-color: #7D40FF;
+    background: var(--primary);
+    border-color: var(--primary);
     font-weight: 600;
 }
 
@@ -277,7 +278,7 @@
     font-family: 'Red Hat Display', Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: rgb(10, 10, 10);
+    color: var(--text-primary);
     margin: 0 0 10px;
     line-height: 29px;
     text-align: left;
@@ -288,7 +289,7 @@
 }
 .blogs-card-desc {
     font-size: 0.875rem;
-    color: #6b7280;
+    color: var(--text-secondary);
     line-height: 1.5;
     margin: 0 0 10px;
     display: -webkit-box;
@@ -304,7 +305,7 @@
 .blogs-card-read-btn {
     font-size: 13px;
     font-weight: 600;
-    color: #7D40FF;
+    color: var(--primary);
     cursor: pointer;
     transition: gap 0.15s;
 }
@@ -333,7 +334,7 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    color: rgb(10, 10, 10);
+    color: var(--text-primary);
     background: transparent;
     border: none;
     cursor: pointer;
@@ -349,12 +350,12 @@
     cursor: default;
 }
 .blogs-page-btn.active {
-    background-color: #eaeaea;
-    color: rgb(10, 10, 10);
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
 }
 .blogs-page-btn:hover:not(.active), .blogs-page-next-btn:hover:not(:disabled) {
-    background-color: #eaeaea;
-    color: rgb(10, 10, 10);
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
 }
 .blogs-page-next-btn:disabled {
     opacity: 0.25;
@@ -379,7 +380,7 @@
     position: relative;
     z-index: 5;
     width: 100%;
-    background: #ffffff; /* Background outside the card is white */
+    background: var(--bg-primary); /* Background outside the card is theme color */
 }
 
 .blogs-newsletter-container {
@@ -720,8 +721,8 @@
 }
 
 .single-blog-content-body {
-    background: #ffffff;
-    color: #0f172a;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
     padding: 60px 24px 80px 24px; /* Reduced top padding to remove large blank space */
     font-family: 'Inter', sans-serif;
     position: relative;
@@ -742,14 +743,14 @@
 /* Sticky Sidebars */
 .single-blog-left-sidebar {
     position: sticky;
-    top: 40px;
+    top: 110px;
     align-self: start;
     z-index: 10;
 }
 
 .single-blog-right-sidebar {
     position: sticky;
-    top: 40px;
+    top: 110px;
     align-self: start;
     z-index: 10;
 }
@@ -765,18 +766,19 @@
     font-size: 32px;
     font-weight: 700;
     margin: 40px 0 20px 0;
-    color: #0f172a;
+    color: var(--text-primary);
 }
 
 .single-blog-main-content p {
     margin-bottom: 24px;
-    color: #334155;
+    color: var(--text-secondary);
 }
 
 /* Key Takeaways Box styling */
 .single-blog-takeaways-box {
-    background-color: #eaf1fb;
-    border-radius: 24px;
+    background-color: var(--bg-tertiary);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 24px 24px 0;
     padding: 32px;
     margin-bottom: 40px;
 }
@@ -785,7 +787,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 22px;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--text-primary);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -836,14 +838,14 @@
     font-family: 'Red Hat Display', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--text-primary);
     margin: 0 0 10px 0;
 }
 
 .single-blog-toc-progress-wrapper {
     width: 60px;
     height: 4px;
-    background: #e2e8f0;
+    background: var(--border-color);
     margin-bottom: 24px;
     border-radius: 2px;
     overflow: hidden;
@@ -851,7 +853,7 @@
 
 .single-blog-toc-progress-bar {
     height: 100%;
-    background: #682EE6;
+    background: var(--primary);
     width: 0%;
     transition: width 0.1s ease-out;
 }
@@ -876,12 +878,12 @@
 }
 
 .single-blog-toc-link:hover {
-    color: #682EE6;
+    color: var(--primary);
     transform: translateX(4px);
 }
 
 .single-blog-toc-link.active {
-    color: #682EE6;
+    color: var(--primary);
     font-weight: 600;
 }
 
@@ -973,7 +975,7 @@
 
 .single-blog-cta-button {
     width: 100%;
-    background: #9061F9;
+    background: var(--primary);
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
@@ -993,9 +995,9 @@
 }
 
 .single-blog-cta-button:hover {
-    background: #7c4bf2;
+    background: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(144, 97, 249, 0.4);
+    box-shadow: 0 8px 24px rgba(59, 184, 82, 0.4);
 }
 
 .single-blog-cta-button svg {
@@ -1009,16 +1011,16 @@
 .single-blog-lead-text {
     font-size: 22px;
     font-weight: 500;
-    color: #1e293b;
+    color: var(--text-primary);
     line-height: 1.6;
     margin-bottom: 36px;
-    border-left: 4px solid #7D40FF;
+    border-left: 4px solid var(--primary);
     padding-left: 20px;
 }
 
 /* See other Blogs Section styling */
 .single-blog-related-section {
-    background-color: #ffffff;
+    background-color: var(--bg-primary);
     padding: 80px 24px 100px 24px;
     width: 100%;
 }
@@ -1054,7 +1056,7 @@
     font-family: 'Outfit', sans-serif;
     font-size: 44px;
     font-weight: 700;
-    color: #0f172a;
+    color: var(--text-primary);
     margin: 0;
     letter-spacing: -0.01em;
 }
@@ -1062,7 +1064,7 @@
 .single-blog-related-title em {
     font-family: 'Playfair Display', Georgia, serif;
     font-style: italic;
-    color: #0f172a;
+    color: var(--text-primary);
     font-weight: 700;
 }
 
@@ -1109,7 +1111,7 @@
     font-family: 'Red Hat Display', Arial, sans-serif;
     font-size: 24px;
     font-weight: 700;
-    color: #0a0a0a;
+    color: var(--text-primary);
     line-height: 28.8px;
     margin: 0;
     transition: color 0.2s ease;
@@ -1138,9 +1140,9 @@
     overflow: hidden;
     border: none;
     text-decoration: none;
-    background: #6433CC;
+    background: var(--primary);
     box-shadow:
-        0 8px 25px rgba(100, 51, 204, 0.4),
+        0 8px 25px rgba(59, 184, 82, 0.4),
         inset -1.2px 1.2px 0px rgba(255, 255, 255, 0.8);
     transition: all 0.4s ease;
 }
@@ -1165,7 +1167,7 @@
     inset: 1.2px;
     background:
         radial-gradient(circle at 85% 15%, rgba(255, 255, 255, 0.15) 0%, transparent 40%),
-        linear-gradient(180deg, #7A4BFF 0%, #6433CC 100%);
+        linear-gradient(180deg, var(--primary) 0%, var(--primary-hover) 100%);
     border-radius: 8px;
     z-index: -1;
     transition: background 0.4s ease;
@@ -1175,7 +1177,7 @@
 .single-blog-view-more-btn:hover {
     transform: translateY(-2px);
     box-shadow:
-        0 12px 30px rgba(100, 51, 204, 0.6),
+        0 12px 30px rgba(59, 184, 82, 0.6),
         inset -1.2px 1.2px 0px rgba(255, 255, 255, 1);
 }
 
@@ -1454,7 +1456,7 @@
 \n
 /* FAQ SECTION FROM APPS.CSS */
 .faq-section {
-    background-color: #ffffff;
+    background-color: var(--bg-primary);
     padding: 80px 40px 40px;
     position: relative;
     z-index: 28;
@@ -1484,7 +1486,7 @@
     font-size: 48px;
     line-height: 58px;
     font-weight: 700;
-    color: rgb(51, 51, 51);
+    color: var(--text-primary);
     margin-bottom: 60px;
     letter-spacing: normal;
 }
@@ -1492,7 +1494,7 @@
     font-family: 'Playfair Display', serif;
     font-style: italic;
     font-weight: 700;
-    color: rgb(51, 51, 51);
+    color: var(--text-primary);
     font-size: 48px;
     line-height: 58px;
 }
@@ -1518,7 +1520,7 @@
     font-size: 24px;
     line-height: 29px;
     font-weight: 700;
-    color: rgb(10, 10, 10);
+    color: var(--text-primary);
     margin: 0;
     transition: color 0.3s ease;
 }
@@ -1526,7 +1528,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid #7D40FF;
+    border: 1px solid var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1537,7 +1539,7 @@
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .faq-item.active .faq-icon-circle {
-    background-color: #7D40FF;
+    background-color: var(--primary);
 }
 .faq-item.active .faq-icon-circle svg {
     transform: rotate(180deg);
@@ -1559,7 +1561,7 @@
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
-    color: rgb(82, 82, 82);
+    color: var(--text-secondary);
     letter-spacing: 0.36px;
     margin: 0;
 }
@@ -1801,7 +1803,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #7D40FF;
+    border-color: var(--primary);
     background: rgba(255, 255, 255, 0.08);
 }
 .form-row {
@@ -1851,7 +1853,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background: linear-gradient(135deg, #7D40FF, #4F1FFF);
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
     height: 56px;
     width: 177px;
     padding: 9px 15px;
@@ -1868,7 +1870,7 @@
 }
 .connect-submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(125, 64, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(59, 184, 82, 0.2);
 }
 
 /* TRUST BANNER & PREFOOTER */
@@ -2083,9 +2085,9 @@
     transition: all 0.3s ease;
 }
 .subscribe-input-wrapper:focus-within {
-    border-color: #7D40FF;
+    border-color: var(--primary);
     background: #FFFFFF;
-    box-shadow: 0 4px 15px rgba(125, 64, 255, 0.05);
+    box-shadow: 0 4px 15px rgba(59, 184, 82, 0.05);
 }
 .mail-icon {
     display: flex;

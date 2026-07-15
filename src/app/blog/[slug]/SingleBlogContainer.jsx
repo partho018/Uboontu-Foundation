@@ -151,8 +151,10 @@ export default function SingleBlogContainer({ slug }) {
 
   if (loading) {
     return (
-      <div className="blogs-page" style={{ padding: '150px 20px', textAlign: 'center', color: '#fff', background: '#0a0a0a', minHeight: '100vh' }}>
-        <h2>Loading article details...</h2>
+      <div className="blogs-page" style={{ padding: '150px 20px', textAlign: 'center', color: 'var(--text-primary)', background: 'var(--bg-primary)', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="loading-spinner" style={{ border: '4px solid var(--border-color)', borderLeft: '4px solid var(--primary)', borderRadius: '50%', width: '40px', height: '40px', margin: '0 auto 20px', animation: 'spin 1s linear infinite' }}></div>
+        <style>{`@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }`}</style>
+        <h2 style={{ fontSize: '20px', fontWeight: '600' }}>Loading article details...</h2>
       </div>
     );
   }
@@ -229,7 +231,7 @@ export default function SingleBlogContainer({ slug }) {
             <div className="single-blog-takeaways-box">
               <h3 className="single-blog-takeaways-title">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="takeaways-sparkle-icon">
-                  <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="#682EE6"/>
+                  <path d="M12 2L15 9L22 12L15 15L12 22L9 15L2 12L9 9L12 2Z" fill="var(--accent)"/>
                 </svg>
                 Key Takeaways
               </h3>
@@ -265,15 +267,15 @@ export default function SingleBlogContainer({ slug }) {
                 <ul className="single-blog-cta-bullets">
                   <li>
                     <svg className="single-blog-cta-check" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="12" cy="12" r="10" stroke="#9061F9" strokeWidth="2.5" fill="none" />
-                      <path d="M8.5 12.5L11 15L16 9" stroke="#9061F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <circle cx="12" cy="12" r="10" stroke="var(--primary)" strokeWidth="2.5" fill="none" />
+                      <path d="M8.5 12.5L11 15L16 9" stroke="var(--primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     Community-led recycling
                   </li>
                   <li>
                     <svg className="single-blog-cta-check" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="12" cy="12" r="10" stroke="#9061F9" strokeWidth="2.5" fill="none" />
-                      <path d="M8.5 12.5L11 15L16 9" stroke="#9061F9" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <circle cx="12" cy="12" r="10" stroke="var(--primary)" strokeWidth="2.5" fill="none" />
+                      <path d="M8.5 12.5L11 15L16 9" stroke="var(--primary)" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                     Empowering local waste workers
                   </li>
@@ -292,7 +294,7 @@ export default function SingleBlogContainer({ slug }) {
                   <button 
                     onClick={handleCopyLink}
                     className="single-blog-cta-button"
-                    style={{ width: '100%', border: '1px solid #9061F9', background: 'transparent', color: '#9061F9', cursor: 'pointer' }}
+                    style={{ width: '100%', border: '1px solid var(--primary)', background: 'transparent', color: 'var(--primary)', cursor: 'pointer' }}
                   >
                     {copied ? 'Link Copied!' : 'Share Article'}
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -16,9 +16,9 @@
   --secondary-hover: #0f766e;
   --secondary-light: #f0fdfa;
   
-  --accent: #d97706;
-  --accent-hover: #b45309;
-  --accent-light: #fef3c7;
+  --accent: #eab308;
+  --accent-hover: #ca8a04;
+  --accent-light: #fef9c3;
   
   --card-shadow: 0 10px 30px -10px rgba(6, 46, 36, 0.08);
   --card-hover-shadow: 0 20px 40px -15px rgba(6, 46, 36, 0.15);
@@ -60,9 +60,9 @@
   --secondary-hover: #14b8a6;
   --secondary-light: rgba(45, 212, 191, 0.1);
   
-  --accent: #fbbf24;
-  --accent-hover: #f59e0b;
-  --accent-light: rgba(251, 191, 36, 0.1);
+  --accent: #fde047;
+  --accent-hover: #facc15;
+  --accent-light: rgba(253, 224, 71, 0.1);
   
   --card-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
   --card-hover-shadow: 0 20px 40px -20px rgba(59, 184, 82, 0.3);
