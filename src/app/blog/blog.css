@@ -224,9 +224,11 @@
     animation: cardFadeIn 0.4s ease both;
     display: flex;
     flex-direction: column;
-    height: 427px;
+    min-height: 427px;
+    height: auto;
     width: 100%;
     max-width: 610px;
+    padding-bottom: 12px;
 }
 .blogs-card:hover {
     transform: translateY(-6px);

@@ -196,6 +196,9 @@ export default function BlogContainer() {
                     {/* Card Body */}
                     <div className="blogs-card-body">
                       <h3 className="blogs-card-title">{post.title}</h3>
+                      <p className="blogs-card-desc">
+                        {post.excerpt || (post.content ? post.content.replace(/<[^>]*>/g, '').substring(0, 100) + '...' : '')}
+                      </p>
                     </div>
                   </motion.article>
                 </Link>
