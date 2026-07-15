@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
-import { ChevronUp } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import Header from './Header';
 import Footer from './Footer';
 import DonateModal from './DonateModal';
@@ -111,79 +111,50 @@ export default function MainLayout({ children }) {
         aria-label="Back to top"
         style={{
           position: 'fixed',
-          right: '1.5rem',
+          right: '2rem',
           bottom: '2rem',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          width: '46px',
-          height: '46px',
-          borderRadius: '50%',
-          background: isHovered 
-            ? 'linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%)' 
-            : 'var(--glass-bg)',
-          border: isHovered ? '1px solid transparent' : '1px solid var(--border-color)',
+          gap: '0.5rem',
+          padding: '0.75rem 1.25rem',
+          borderRadius: '9999px',
+          background: 'var(--primary)',
+          border: 'none',
           backdropFilter: 'blur(16px)',
           WebkitBackdropFilter: 'blur(16px)',
           boxShadow: isHovered 
-            ? '0 10px 25px rgba(59, 184, 82, 0.4)' 
-            : '0 8px 24px rgba(0,0,0,0.08)',
+            ? '0 10px 25px rgba(59, 184, 82, 0.3)' 
+            : '0 8px 24px rgba(59, 184, 82, 0.15)',
           cursor: 'pointer',
           zIndex: 1200,
           opacity: showBackTop ? 1 : 0,
           transform: showBackTop 
-            ? (isHovered ? 'translateY(-3px) scale(1.05)' : 'translateY(0) scale(1)') 
+            ? (isHovered ? 'translateY(-3px) scale(1.03)' : 'translateY(0) scale(1)') 
             : 'translateY(20px) scale(0.9)',
           pointerEvents: showBackTop ? 'all' : 'none',
           transition: 'opacity 0.35s ease, transform 0.35s cubic-bezier(0.25,1,0.5,1), background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease',
         }}
       >
-        <svg 
-          width="46" 
-          height="46" 
-          viewBox="0 0 46 46" 
-          style={{ 
-            transform: 'rotate(-90deg)', 
-            position: 'absolute', 
-            top: -1, 
-            left: -1,
-            pointerEvents: 'none'
-          }}
-        >
-          <circle
-            cx="23"
-            cy="23"
-            r="21"
-            fill="transparent"
-            stroke={isHovered ? 'rgba(255,255,255,0.15)' : 'var(--border-color)'}
-            strokeWidth="2.5"
-            style={{ transition: 'stroke 0.3s ease' }}
-          />
-          <circle
-            cx="23"
-            cy="23"
-            r="21"
-            fill="transparent"
-            stroke={isHovered ? 'white' : 'var(--primary)'}
-            strokeWidth="2.5"
-            strokeDasharray="131.95"
-            strokeDashoffset={131.95 - (131.95 * scrollPercentage) / 100}
-            strokeLinecap="round"
-            style={{ 
-              transition: 'stroke-dashoffset 0.1s ease, stroke 0.3s ease'
-            }}
-          />
-        </svg>
-        <ChevronUp 
-          size={20} 
-          color={isHovered ? 'white' : 'var(--primary)'} 
+        <ArrowUp 
+          size={16} 
+          color="white" 
           strokeWidth={2.5} 
           style={{ 
-            transform: isHovered ? 'translateY(-2px)' : 'translateY(0)',
+            transform: isHovered ? 'translateY(-1px)' : 'translateY(0)',
             transition: 'transform 0.3s ease, color 0.3s ease',
-            zIndex: 2
           }}
         />
+        <span 
+          style={{
+            color: 'white',
+            fontSize: '14px',
+            fontWeight: '600',
+            fontFamily: 'var(--font-body)',
+            transition: 'color 0.3s ease',
+          }}
+        >
+          Back to Top
+        </span>
       </button>
     </>
   );
