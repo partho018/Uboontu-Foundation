@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { HandHeart, CheckCircle2, Send } from 'lucide-react';
+import { HandHeart, CheckCircle2, Send, Award, Heart } from 'lucide-react';
 
 export default function DonatePage() {
   const [submitted, setSubmitted] = useState(false);
@@ -37,33 +37,95 @@ export default function DonatePage() {
   };
 
   return (
-    <main className="get-involved-page">
-      {/* Content Section */}
-      <section className="gi-split-section">
-        <div className="container gi-split-container">
-          <div className="gi-split-grid scroll-reveal reveal-fade-up">
-            <div className="gi-split-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80" 
-                alt="Support Our Cause - Charity Donations" 
-              />
-            </div>
-            <div className="gi-split-content">
-              <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
-                <HandHeart size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Donate
+    <main className="get-involved-page donate-page">
+      {/* Background Decorative Elements */}
+      <div className="gi-bg-decorations">
+        <div className="bg-orb orb-donate-1"></div>
+        <div className="bg-orb orb-donate-2"></div>
+        <div className="bg-grid-overlay"></div>
+        <div className="floating-hearts-container">
+          <div className="heart-particle hp-1"></div>
+          <div className="heart-particle hp-2"></div>
+          <div className="heart-particle hp-3"></div>
+          <div className="heart-particle hp-4"></div>
+        </div>
+      </div>
+      {/* Hero Section */}
+      <section className="about-hero donate-hero">
+        <div className="container">
+          <div className="about-hero-grid donate-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="about-eyebrow">
+                <HandHeart size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> Donate
               </span>
-              <h1 className="gi-split-title">Support Our <span className="elegant-serif">Cause</span></h1>
-              <p className="gi-split-subtitle">
+              <h1 className="about-title">
+                Support Our <span className="elegant-serif text-gradient">Cause</span>
+              </h1>
+              <p className="about-desc-lead">
                 Every contribution helps us build cleaner communities, promote circular economics, and empower citizens through green education.
               </p>
-              <div className="gi-split-divider" />
-              <p className="gi-split-desc-lead">
-                Your support can help Uboontu Foundation create cleaner communities, promote scientific waste management, and empower citizens through environmental awareness and sustainability initiatives.
-              </p>
-              <p className="gi-split-desc-body">
+              <p className="about-desc-body">
                 Every contribution—big or small—helps us scale source segregation, distribute composting systems, establish Material Recovery Facilities, and fund grassroots environmental education campaigns. Partner with us in making sustainability a shared way of life.
               </p>
+              <div className="hero-cta-buttons">
+                <button 
+                  onClick={() => document.querySelector('.gi-form-section')?.scrollIntoView({ behavior: 'smooth' })} 
+                  className="btn btn-primary"
+                  style={{ border: 'none', cursor: 'pointer' }}
+                >
+                  Pledge Now
+                </button>
+              </div>
             </div>
+
+            {/* Visual Image Column (Staggered Stack) */}
+            <div className="gi-hero-visual-stack scroll-reveal reveal-fade-left duration-slow">
+              <div className="gi-stack-container">
+                
+                {/* Main Image */}
+                <div className="gi-main-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=800&q=80" 
+                    alt="Support Our Cause - Charity Donations" 
+                    className="gi-main-img"
+                  />
+                </div>
+                
+                {/* Sub Image */}
+                <div className="gi-sub-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=80" 
+                    alt="Uboontu Charity Work" 
+                    className="gi-sub-img"
+                  />
+                </div>
+
+                {/* Floating Metric 1 */}
+                <div className="floating-metric gi-metric-1">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(244, 63, 94, 0.15)', color: '#f43f5e' }}>
+                    <Award size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">80G Tax</span>
+                    <span className="metric-lbl">Exemptions</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric gi-metric-2">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(234, 179, 8, 0.15)', color: '#eab308' }}>
+                    <Heart size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">100%</span>
+                    <span className="metric-lbl">Transparent</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

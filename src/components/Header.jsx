@@ -300,7 +300,7 @@ export default function Header({ onDonateClick, onPartnerClick }) {
           backdrop-filter: blur(16px);
           -webkit-backdrop-filter: blur(16px);
           border: 1px solid rgba(6, 46, 36, 0.08);
-          border-radius: 100px;
+          border-radius: 20px;
           transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
           box-shadow: 0 10px 30px -10px rgba(6, 46, 36, 0.06);
         }

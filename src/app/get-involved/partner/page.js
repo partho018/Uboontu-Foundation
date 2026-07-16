@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Building2, CheckCircle2, Send } from 'lucide-react';
+import { Building2, CheckCircle2, Send, Users, Briefcase } from 'lucide-react';
 
 const row1 = [
   "68a091feeaa832d6e633b930_Logo_Goldman Sachs_mono.svg",
@@ -132,33 +132,95 @@ export default function PartnerPage() {
   };
 
   return (
-    <main className="get-involved-page">
-      {/* Content Section */}
-      <section className="gi-split-section">
-        <div className="container gi-split-container">
-          <div className="gi-split-grid scroll-reveal reveal-fade-up">
-            <div className="gi-split-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" 
-                alt="Partner With Us - Organizational Collaboration" 
-              />
-            </div>
-            <div className="gi-split-content">
-              <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
-                <Building2 size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Partner
+    <main className="get-involved-page partner-page">
+      {/* Background Decorative Elements */}
+      <div className="gi-bg-decorations">
+        <div className="bg-orb orb-partner-1"></div>
+        <div className="bg-orb orb-partner-2"></div>
+        <div className="bg-grid-overlay"></div>
+        <div className="network-grid">
+          <div className="net-node node-1"></div>
+          <div className="net-node node-2"></div>
+          <div className="net-node node-3"></div>
+          <div className="net-node node-4"></div>
+        </div>
+      </div>
+      {/* Hero Section */}
+      <section className="about-hero partner-hero">
+        <div className="container">
+          <div className="about-hero-grid partner-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="about-eyebrow">
+                <Building2 size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> Partner
               </span>
-              <h1 className="gi-split-title">Partner With <span className="elegant-serif">Us</span></h1>
-              <p className="gi-split-subtitle">
+              <h1 className="about-title">
+                Partner With <span className="elegant-serif text-gradient">Us</span>
+              </h1>
+              <p className="about-desc-lead">
                 CSR collaborations, grants, and organizational partnerships to empower communities through effective Public-Private Partnerships (PPP).
               </p>
-              <div className="gi-split-divider" />
-              <p className="gi-split-desc-lead">
-                Join hands with Uboontu Foundation in creating cleaner, greener, and more sustainable communities through impactful environmental action. We welcome CSR collaborations, grants, and organizational partnerships to empower communities through effective Public-Private Partnerships (PPP).
+              <p className="about-desc-body">
+                With strong on-ground experience in waste management, Uboontu Foundation works in alignment with government initiatives such as Swachh Bharat Mission and Mission LiFE, while promoting the principles of Reduce, Reuse, and Recycle (3R) and sustainable waste management practices.
               </p>
-              <p className="gi-split-desc-body">
-                With strong on-ground experience in waste management, Uboontu Foundation works in alignment with government initiatives such as Swachh Bharat Mission and Mission LiFE, while promoting the principles of Reduce, Reuse, and Recycle (3R) and sustainable waste management practices. The foundation has valid 12A, 80G, and CSR-approval for corporate partnerships.
-              </p>
+              <div className="hero-cta-buttons">
+                <button 
+                  onClick={() => document.querySelector('.gi-form-section')?.scrollIntoView({ behavior: 'smooth' })} 
+                  className="btn btn-primary"
+                  style={{ border: 'none', cursor: 'pointer' }}
+                >
+                  Collaborate Now
+                </button>
+              </div>
             </div>
+
+            {/* Visual Image Column (Staggered Stack) */}
+            <div className="gi-hero-visual-stack scroll-reveal reveal-fade-left duration-slow">
+              <div className="gi-stack-container">
+                
+                {/* Main Image */}
+                <div className="gi-main-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" 
+                    alt="Partner With Us - Organizational Collaboration" 
+                    className="gi-main-img"
+                  />
+                </div>
+                
+                {/* Sub Image */}
+                <div className="gi-sub-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80" 
+                    alt="Uboontu Fieldwork" 
+                    className="gi-sub-img"
+                  />
+                </div>
+
+                {/* Floating Metric 1 */}
+                <div className="floating-metric gi-metric-1">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(13, 148, 136, 0.15)', color: '#0d9488' }}>
+                    <Briefcase size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">15+ Partners</span>
+                    <span className="metric-lbl">Active Corporates</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric gi-metric-2">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(59, 184, 82, 0.15)', color: 'var(--primary)' }}>
+                    <Users size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">100k+ Lives</span>
+                    <span className="metric-lbl">Impacted</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

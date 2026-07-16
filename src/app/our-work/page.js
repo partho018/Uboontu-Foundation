@@ -1,4 +1,4 @@
-import { Briefcase } from 'lucide-react';
+import { Briefcase, Leaf } from 'lucide-react';
 import ExpandableCard from '../about/ExpandableCard';
 
 export const metadata = {
@@ -50,29 +50,116 @@ export default function OurWorkPage() {
     <main className="our-work-page">
       {/* Hero Section */}
       <section className="our-work-hero">
-        <div className="our-work-hero-bg">
-          <img 
-            src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1600&q=80" 
-            alt="Uboontu Foundation Environmental Work" 
-            className="our-work-hero-img"
-          />
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-1"></div>
+          <div className="bg-orb orb-2"></div>
+          <div className="bg-orb orb-3"></div>
+          <div className="bg-grid-overlay"></div>
+          
+          <div className="floating-leaf leaf-1" style={{ '--rot': '15deg' }}>
+            <Leaf size={48} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-2" style={{ '--rot': '-25deg' }}>
+            <Leaf size={36} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-3" style={{ '--rot': '45deg' }}>
+            <Leaf size={40} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-4" style={{ '--rot': '-10deg' }}>
+            <Leaf size={32} strokeWidth={1.5} />
+          </div>
         </div>
+
         <div className="container">
-          <div className="our-work-hero-content scroll-reveal reveal-fade-right duration-slow">
-            <span className="our-work-eyebrow">
-              <Briefcase size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Our Impact
-            </span>
-            <h1 className="our-work-title">Our <span className="elegant-serif">Work</span></h1>
-            <h3 className="our-work-subtitle">Driving Sustainable Change Through Action</h3>
-            <p className="our-work-desc">
-              At Uboontu Foundation, we work towards building cleaner, healthier, and more sustainable communities through practical environmental solutions and community-driven initiatives. Our projects focus on waste management, environmental awareness, circular economy practices, and climate-conscious community development.
-            </p>
+          <div className="our-work-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="our-work-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="our-work-eyebrow">
+                <Briefcase size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> Our Impact
+              </span>
+              <h1 className="our-work-title">
+                Our <span className="elegant-serif text-gradient">Work</span>
+              </h1>
+              <h3 className="our-work-subtitle">Driving Sustainable Change Through Action</h3>
+              <p className="our-work-desc">
+                At Uboontu Foundation, we work towards building cleaner, healthier, and more sustainable communities through practical environmental solutions and community-driven initiatives. Our projects focus on waste management, environmental awareness, circular economy practices, and climate-conscious community development.
+              </p>
+              <div className="hero-cta-buttons">
+                <a href="#projects" className="btn btn-primary">Explore Projects</a>
+                <a href="/get-involved/volunteer" className="btn btn-secondary">Join Us</a>
+              </div>
+            </div>
+
+            {/* Visual Image Column */}
+            <div className="our-work-hero-visual scroll-reveal reveal-fade-left duration-slow">
+              <div className="hero-image-container">
+                <img 
+                  src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80" 
+                  alt="Uboontu Foundation Environmental Work" 
+                  className="our-work-hero-img"
+                />
+                
+                {/* Floating Metric 1 */}
+                <div className="floating-metric metric-1">
+                  <div className="metric-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="12" y1="1" x2="12" y2="23"></line>
+                      <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">100%</span>
+                    <span className="metric-lbl">Direct Impact</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric metric-2">
+                  <div className="metric-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="9" cy="7" r="4"></circle>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">15,000+</span>
+                    <span className="metric-lbl">Lives Enriched</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section className="work-projects-section">
+      <section className="work-projects-section" id="projects">
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-1"></div>
+          <div className="bg-orb orb-2"></div>
+          <div className="bg-orb orb-3"></div>
+          <div className="bg-grid-overlay"></div>
+          
+          <div className="floating-leaf leaf-1" style={{ '--rot': '35deg' }}>
+            <Leaf size={48} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-2" style={{ '--rot': '-15deg' }}>
+            <Leaf size={36} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-3" style={{ '--rot': '55deg' }}>
+            <Leaf size={40} strokeWidth={1.5} />
+          </div>
+          <div className="floating-leaf leaf-4" style={{ '--rot': '-20deg' }}>
+            <Leaf size={32} strokeWidth={1.5} />
+          </div>
+        </div>
+
         <div className="container">
           <div className="projects-container">
             {/* Header */}

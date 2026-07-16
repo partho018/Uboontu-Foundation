@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Award, CheckCircle2, Send } from 'lucide-react';
+import { Award, CheckCircle2, Send, Clock, Briefcase } from 'lucide-react';
 
 export default function InternshipPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -39,33 +39,95 @@ export default function InternshipPage() {
   };
 
   return (
-    <main className="get-involved-page">
-      {/* Content Section */}
-      <section className="gi-split-section">
-        <div className="container gi-split-container">
-          <div className="gi-split-grid scroll-reveal reveal-fade-up">
-            <div className="gi-split-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
-                alt="Internship Opportunities - Collaborative Learning" 
-              />
-            </div>
-            <div className="gi-split-content">
-              <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
-                <Award size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Internship
+    <main className="get-involved-page internship-page">
+      {/* Background Decorative Elements */}
+      <div className="gi-bg-decorations">
+        <div className="bg-orb orb-internship-1"></div>
+        <div className="bg-orb orb-internship-2"></div>
+        <div className="bg-grid-overlay"></div>
+        <div className="shapes-container">
+          <div className="edu-shape es-1"></div>
+          <div className="edu-shape es-2"></div>
+          <div className="edu-shape es-3"></div>
+          <div className="edu-shape es-4"></div>
+        </div>
+      </div>
+      {/* Hero Section */}
+      <section className="about-hero internship-hero">
+        <div className="container">
+          <div className="about-hero-grid internship-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="about-eyebrow">
+                <Award size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> Internship
               </span>
-              <h1 className="gi-split-title">Internship <span className="elegant-serif">Opportunities</span></h1>
-              <p className="gi-split-subtitle">
+              <h1 className="about-title">
+                Internship <span className="elegant-serif text-gradient">Opportunities</span>
+              </h1>
+              <p className="about-desc-lead">
                 Work on real-world environmental sustainability and waste management initiatives to advance your professional skills.
               </p>
-              <div className="gi-split-divider" />
-              <p className="gi-split-desc-lead">
-                Gain hands-on experience with Uboontu Foundation by working on real-world sustainability and waste management initiatives.
-              </p>
-              <p className="gi-split-desc-body">
+              <p className="about-desc-body">
                 Our structured internships provide students and young professionals a direct avenue to conduct ground-level research, manage waste collection pilots, engage in community outreach, and understand environmental policy implementations. We offer mentorship, certificates, and potential career opportunities.
               </p>
+              <div className="hero-cta-buttons">
+                <button 
+                  onClick={() => document.querySelector('.gi-form-section')?.scrollIntoView({ behavior: 'smooth' })} 
+                  className="btn btn-primary"
+                  style={{ border: 'none', cursor: 'pointer' }}
+                >
+                  Apply Now
+                </button>
+              </div>
             </div>
+
+            {/* Visual Image Column (Staggered Stack) */}
+            <div className="gi-hero-visual-stack scroll-reveal reveal-fade-left duration-slow">
+              <div className="gi-stack-container">
+                
+                {/* Main Image */}
+                <div className="gi-main-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" 
+                    alt="Internship Opportunities - Collaborative Learning" 
+                    className="gi-main-img"
+                  />
+                </div>
+                
+                {/* Sub Image */}
+                <div className="gi-sub-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=400&q=80" 
+                    alt="Uboontu Fieldwork Research" 
+                    className="gi-sub-img"
+                  />
+                </div>
+
+                {/* Floating Metric 1 */}
+                <div className="floating-metric gi-metric-1">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(6, 182, 212, 0.15)', color: '#06b6d4' }}>
+                    <Clock size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">3 Months</span>
+                    <span className="metric-lbl">Program Duration</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric gi-metric-2">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(59, 184, 82, 0.15)', color: 'var(--primary)' }}>
+                    <Award size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">Certificate</span>
+                    <span className="metric-lbl">And Mentorship</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Users, CheckCircle2, Send } from 'lucide-react';
+import { Users, CheckCircle2, Send, Leaf, Briefcase } from 'lucide-react';
 
 export default function VolunteerPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -37,33 +37,95 @@ export default function VolunteerPage() {
   };
 
   return (
-    <main className="get-involved-page">
-      {/* Content Section */}
-      <section className="gi-split-section">
-        <div className="container gi-split-container">
-          <div className="gi-split-grid scroll-reveal reveal-fade-up">
-            <div className="gi-split-image-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=800&q=80" 
-                alt="Volunteer With Us - Community Action" 
-              />
-            </div>
-            <div className="gi-split-content">
-              <span className="gi-eyebrow" style={{ alignSelf: 'flex-start' }}>
-                <Users size={14} style={{ marginRight: '4px', verticalAlign: 'middle' }} /> Volunteer
+    <main className="get-involved-page volunteer-page">
+      {/* Background Decorative Elements */}
+      <div className="gi-bg-decorations">
+        <div className="bg-orb orb-volunteer-1"></div>
+        <div className="bg-orb orb-volunteer-2"></div>
+        <div className="bg-grid-overlay"></div>
+        <div className="floating-leaves-container">
+          <div className="leaf-particle lp-1"><Leaf size={24} /></div>
+          <div className="leaf-particle lp-2"><Leaf size={32} /></div>
+          <div className="leaf-particle lp-3"><Leaf size={20} /></div>
+          <div className="leaf-particle lp-4"><Leaf size={28} /></div>
+        </div>
+      </div>
+      {/* Hero Section */}
+      <section className="about-hero volunteer-hero">
+        <div className="container">
+          <div className="about-hero-grid volunteer-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="about-eyebrow">
+                <Users size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> Volunteer
               </span>
-              <h1 className="gi-split-title">Volunteer With <span className="elegant-serif">Us</span></h1>
-              <p className="gi-split-subtitle">
+              <h1 className="about-title">
+                Volunteer With <span className="elegant-serif text-gradient">Us</span>
+              </h1>
+              <p className="about-desc-lead">
                 Join the movement towards cleaner, healthier, and more sustainable communities through your skills, time, and action.
               </p>
-              <div className="gi-split-divider" />
-              <p className="gi-split-desc-lead">
-                Become a volunteer with Uboontu Foundation and be part of the movement towards cleaner and more sustainable communities.
-              </p>
-              <p className="gi-split-desc-body">
+              <p className="about-desc-body">
                 Whether you want to participate in on-ground cleanliness campaigns, run social media awareness drives, write articles, or help organize eco-events, your skills can create a massive difference. Join our network of eco-warriors today and drive environmental awareness and meaningful social impact!
               </p>
+              <div className="hero-cta-buttons">
+                <button 
+                  onClick={() => document.querySelector('.gi-form-section')?.scrollIntoView({ behavior: 'smooth' })} 
+                  className="btn btn-primary"
+                  style={{ border: 'none', cursor: 'pointer' }}
+                >
+                  Join Us
+                </button>
+              </div>
             </div>
+
+            {/* Visual Image Column (Staggered Stack) */}
+            <div className="gi-hero-visual-stack scroll-reveal reveal-fade-left duration-slow">
+              <div className="gi-stack-container">
+                
+                {/* Main Image */}
+                <div className="gi-main-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?auto=format&fit=crop&w=800&q=80" 
+                    alt="Volunteer With Us - Community Action" 
+                    className="gi-main-img"
+                  />
+                </div>
+                
+                {/* Sub Image */}
+                <div className="gi-sub-img-wrap">
+                  <img 
+                    src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=400&q=80" 
+                    alt="Uboontu Fieldwork" 
+                    className="gi-sub-img"
+                  />
+                </div>
+
+                {/* Floating Metric 1 */}
+                <div className="floating-metric gi-metric-1">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(59, 184, 82, 0.15)', color: 'var(--primary)' }}>
+                    <Leaf size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">500+</span>
+                    <span className="metric-lbl">Eco-Warriors</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric gi-metric-2">
+                  <div className="metric-icon" style={{ backgroundColor: 'rgba(13, 148, 136, 0.15)', color: '#0d9488' }}>
+                    <Users size={18} />
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">12+ Drives</span>
+                    <span className="metric-lbl">Monthly Events</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

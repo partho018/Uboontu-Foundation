@@ -12,28 +12,108 @@ export default function AboutPage() {
     <main className="about-page">
       {/* Hero Section / Who We Are */}
       <section className="about-hero">
-        <div className="about-hero-bg">
-          <img 
-            src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1600&q=80" 
-            alt="Uboontu Foundation - Who We Are" 
-            className="about-hero-img"
-          />
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-1"></div>
+          <div className="bg-orb orb-2"></div>
+          <div className="bg-orb orb-3"></div>
+          <div className="bg-grid-overlay"></div>
+          
+          {/* Abstract Concentric Rings */}
+          <div className="about-ring-cluster cluster-top">
+            <div className="ring ring-lg"></div>
+            <div className="ring ring-md"></div>
+            <div className="ring ring-sm"></div>
+          </div>
+          
+          {/* Pulsing Dots */}
+          <div className="pulsing-dot dot-1"></div>
+          <div className="pulsing-dot dot-2"></div>
         </div>
+
         <div className="container">
-          <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
-            <h1 className="about-title">Who We <span className="elegant-serif">Are</span></h1>
-            <p className="about-desc-lead">
-              Uboontu Foundation is committed to creating environmentally responsible communities through practical and scalable sustainability solutions. Our work focuses on solid waste management, behavior change communication, recycling systems, biodiversity restoration, and climate action initiatives.
-            </p>
-            <p className="about-desc-body">
-              For the last several years, we have been actively implementing waste management projects across residential colonies, institutions, villages, slum communities, commercial establishments, and government spaces.
-            </p>
+          <div className="about-hero-grid">
+            
+            {/* Text Content Column */}
+            <div className="about-hero-content scroll-reveal reveal-fade-right duration-slow">
+              <span className="about-eyebrow">
+                <Target size={14} style={{ marginRight: '6px', verticalAlign: 'middle' }} /> About Us
+              </span>
+              <h1 className="about-title">
+                Who We <span className="elegant-serif text-gradient">Are</span>
+              </h1>
+              <p className="about-desc-lead">
+                Uboontu Foundation is committed to creating environmentally responsible communities through practical and scalable sustainability solutions. Our work focuses on solid waste management, behavior change communication, recycling systems, biodiversity restoration, and climate action initiatives.
+              </p>
+              <p className="about-desc-body">
+                For the last several years, we have been actively implementing waste management projects across residential colonies, institutions, villages, slum communities, commercial establishments, and government spaces.
+              </p>
+              <div className="hero-cta-buttons">
+                <a href="/our-work" className="btn btn-primary">Our Projects</a>
+                <a href="/get-involved/volunteer" className="btn btn-secondary">Get Involved</a>
+              </div>
+            </div>
+
+            {/* Visual Image Column */}
+            <div className="about-hero-visual scroll-reveal reveal-fade-left duration-slow">
+              <div className="about-image-container">
+                <img 
+                  src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=800&q=80" 
+                  alt="Uboontu Foundation - Who We Are" 
+                  className="about-hero-img"
+                />
+                
+                {/* Floating Metric 1 */}
+                <div className="floating-metric metric-1">
+                  <div className="metric-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">4+ Cities</span>
+                    <span className="metric-lbl">Active Projects</span>
+                  </div>
+                </div>
+
+                {/* Floating Metric 2 */}
+                <div className="floating-metric metric-2">
+                  <div className="metric-icon">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                  </div>
+                  <div className="metric-text">
+                    <span className="metric-val">100%</span>
+                    <span className="metric-lbl">Eco-Conscious</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="vision-mission-section" style={{ background: 'var(--bg-tertiary)' }}>
+      <section className="vision-mission-section">
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-1" style={{ top: '20%', left: '10%' }}></div>
+          <div className="bg-orb orb-2" style={{ bottom: '10%', right: '5%' }}></div>
+          <div className="bg-grid-overlay"></div>
+          
+          {/* Abstract Concentric Rings */}
+          <div className="about-ring-cluster cluster-middle" style={{ top: '15%', right: '-15%' }}>
+            <div className="ring ring-lg"></div>
+            <div className="ring ring-md"></div>
+            <div className="ring ring-sm"></div>
+          </div>
+          
+          <div className="pulsing-dot dot-3"></div>
+        </div>
+
         <div className="container">
           <div className="vm-grid">
             {/* Vision */}
@@ -79,6 +159,22 @@ export default function AboutPage() {
 
       {/* Projects Overview / Summary Section */}
       <section className="projects-section">
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-3" style={{ top: '10%', right: '20%' }}></div>
+          <div className="bg-orb orb-1" style={{ bottom: '20%', left: '-5%' }}></div>
+          <div className="bg-grid-overlay"></div>
+          
+          {/* Abstract Concentric Rings */}
+          <div className="about-ring-cluster cluster-bottom" style={{ bottom: '5%', left: '-10%' }}>
+            <div className="ring ring-lg"></div>
+            <div className="ring ring-md"></div>
+            <div className="ring ring-sm"></div>
+          </div>
+          
+          <div className="pulsing-dot dot-4"></div>
+        </div>
+
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <h2><span className="elegant-serif">Projects</span></h2>
@@ -149,6 +245,22 @@ export default function AboutPage() {
 
       {/* Awards & Recognitions Section */}
       <section className="awards-section">
+        {/* Background Decorative Elements */}
+        <div className="hero-bg-decorations">
+          <div className="bg-orb orb-2" style={{ top: '30%', left: '20%' }}></div>
+          <div className="bg-orb orb-3" style={{ bottom: '-10%', right: '10%' }}></div>
+          <div className="bg-grid-overlay"></div>
+          
+          {/* Abstract Concentric Rings */}
+          <div className="about-ring-cluster cluster-top" style={{ top: '10%', right: '-10%', width: '500px', height: '500px' }}>
+            <div className="ring ring-lg"></div>
+            <div className="ring ring-md"></div>
+            <div className="ring ring-sm"></div>
+          </div>
+          
+          <div className="pulsing-dot dot-1" style={{ bottom: '20%', left: '10%' }}></div>
+        </div>
+
         <div className="container">
           <div className="section-header scroll-reveal reveal-fade-up">
             <span className="badge badge-accent">Awards & Recognitions</span>

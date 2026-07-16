@@ -170,7 +170,7 @@ export default function SingleBlogContainer({ slug }) {
       {/* ─── HERO HEADER SECTION (80vh height, background image) ─── */}
       <section 
         className="single-blog-hero" 
-        style={{ backgroundImage: `url('/image (1).webp')` }}
+        style={{ backgroundImage: `url('/blog-hero-bg.webp')` }}
       >
         <div className="single-blog-hero-overlay" />
         <div className="single-blog-hero-inner">

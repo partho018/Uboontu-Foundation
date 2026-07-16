@@ -4,6 +4,8 @@
   padding-bottom: 8rem;
   background-color: #ffffff;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 [data-theme='dark'] .get-involved-page {
@@ -620,7 +622,7 @@
 
 /* Trusted Brands Section */
 .trusted-brands-section {
-  background-color: #ffffff;
+  background-color: transparent;
   color: var(--text-primary);
   padding: 3rem 0;
   position: relative;
@@ -630,7 +632,7 @@
 }
 
 [data-theme='dark'] .trusted-brands-section {
-  background-color: #050c09;
+  background-color: transparent;
 }
 
 .trusted-brands-container {
@@ -814,5 +816,392 @@
   .gi-tab-btn {
     padding: 0.5rem 1rem;
     font-size: 0.95rem;
+  }
+}
+
+/* Background Decorative Elements System */
+.gi-bg-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.gi-split-section,
+.trusted-brands-section,
+.gi-form-section {
+  position: relative;
+  z-index: 2;
+}
+
+/* Base glowing gradient orbs */
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.65;
+  transition: all 0.5s ease;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+
+[data-theme='dark'] .bg-orb {
+  opacity: 0.3;
+  mix-blend-mode: screen;
+  filter: blur(140px);
+}
+
+/* Subtle organic grid overlay */
+.bg-grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--text-muted) 1.5px, transparent 1.5px);
+  background-size: 40px 40px;
+  opacity: 0.18;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.1) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 80%, rgba(0,0,0,0.1) 100%);
+}
+
+[data-theme='dark'] .bg-grid-overlay {
+  opacity: 0.08;
+}
+
+/* 1. PARTNER PAGE SPECIFIC BACKGROUND */
+.orb-partner-1 {
+  top: 5%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+}
+.orb-partner-2 {
+  bottom: 10%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #0ea5e9 0%, transparent 70%);
+}
+
+.network-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.net-node {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  box-shadow: 0 0 15px var(--primary);
+  opacity: 0.7;
+}
+.net-node::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--primary) 0%, transparent 100%);
+  transform-origin: left center;
+  opacity: 0.6;
+}
+.node-1 { top: 15%; left: 10%; animation: nodeFloat 8s ease-in-out infinite alternate; }
+.node-1::before { transform: rotate(30deg); }
+.node-2 { top: 40%; right: 15%; animation: nodeFloat 10s ease-in-out infinite alternate; }
+.node-2::before { transform: rotate(150deg); }
+.node-3 { bottom: 30%; left: 8%; animation: nodeFloat 7s ease-in-out infinite alternate; }
+.node-3::before { transform: rotate(-45deg); }
+.node-4 { bottom: 15%; right: 12%; animation: nodeFloat 9s ease-in-out infinite alternate; }
+.node-4::before { transform: rotate(210deg); }
+
+@keyframes nodeFloat {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(25px, -25px); }
+}
+
+/* 2. DONATE PAGE SPECIFIC BACKGROUND */
+.orb-donate-1 {
+  top: 5%;
+  left: -5%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, #f43f5e 0%, transparent 70%);
+}
+.orb-donate-2 {
+  bottom: 10%;
+  right: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #eab308 0%, transparent 70%);
+}
+.floating-hearts-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.heart-particle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #f43f5e;
+  border-radius: 50%;
+  filter: blur(1.5px);
+  box-shadow: 0 0 10px rgba(244, 63, 94, 0.6);
+  opacity: 0.6;
+}
+.hp-1 { top: 20%; right: 25%; animation: heartFloat 12s infinite linear; }
+.hp-2 { top: 55%; left: 18%; animation: heartFloat 16s infinite linear; }
+.hp-3 { bottom: 40%; right: 10%; animation: heartFloat 14s infinite linear; }
+.hp-4 { bottom: 15%; left: 30%; animation: heartFloat 18s infinite linear; }
+
+@keyframes heartFloat {
+  0% { transform: translateY(0) scale(0.8); opacity: 0; }
+  10% { opacity: 0.7; }
+  90% { opacity: 0.7; }
+  100% { transform: translateY(-400px) scale(1.4); opacity: 0; }
+}
+
+/* 3. VOLUNTEER PAGE SPECIFIC BACKGROUND */
+.orb-volunteer-1 {
+  top: 5%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+}
+.orb-volunteer-2 {
+  bottom: 10%;
+  left: -8%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #0d9488 0%, transparent 70%);
+}
+.floating-leaves-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.leaf-particle {
+  position: absolute;
+  color: var(--primary);
+  opacity: 0.5;
+  transform-origin: center;
+  filter: drop-shadow(0 2px 5px rgba(59, 184, 82, 0.25));
+}
+.lp-1 { top: 15%; left: 15%; animation: leafSway 15s infinite linear; }
+.lp-2 { top: 45%; right: 12%; animation: leafSway 20s infinite linear; }
+.lp-3 { bottom: 35%; left: 20%; animation: leafSway 18s infinite linear; }
+.lp-4 { bottom: 10%; right: 25%; animation: leafSway 22s infinite linear; }
+
+@keyframes leafSway {
+  0% { transform: translateY(0) rotate(0deg) scale(0.9); }
+  50% { transform: translateY(-60px) rotate(45deg) scale(1.1); }
+  100% { transform: translateY(-120px) rotate(90deg) scale(0.9); }
+}
+
+/* 4. INTERNSHIP PAGE SPECIFIC BACKGROUND */
+.orb-internship-1 {
+  top: 5%;
+  left: -5%;
+  width: 580px;
+  height: 580px;
+  background: radial-gradient(circle, #06b6d4 0%, transparent 70%);
+}
+.orb-internship-2 {
+  bottom: 10%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
+}
+.shapes-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.edu-shape {
+  position: absolute;
+  border: 2px solid rgba(6, 182, 212, 0.7);
+  width: 24px;
+  height: 24px;
+  transform: rotate(45deg);
+  opacity: 0.65;
+}
+.es-1 { top: 22%; right: 18%; border-radius: 4px; animation: shapeRotate 25s infinite linear; }
+.es-2 { top: 50%; left: 10%; border-radius: 50%; animation: shapeRotate 35s infinite linear; }
+.es-3 { bottom: 30%; right: 22%; border-radius: 4px; animation: shapeRotate 28s infinite linear; }
+.es-4 { bottom: 12%; left: 25%; border-radius: 50%; animation: shapeRotate 32s infinite linear; }
+
+@keyframes shapeRotate {
+  0% { transform: rotate(0deg) translate(0, 0) scale(0.8); }
+  50% { transform: rotate(180deg) translate(15px, -30px) scale(1.1); }
+  100% { transform: rotate(360deg) translate(0, 0) scale(0.8); }
+}
+
+/* 5. CAREERS PAGE SPECIFIC BACKGROUND */
+.orb-careers-1 {
+  top: 5%;
+  right: -8%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+}
+.orb-careers-2 {
+  bottom: 10%;
+  left: -8%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #84cc16 0%, transparent 70%);
+}
+.career-paths {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.career-path {
+  position: absolute;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(132, 204, 22, 0.6) 50%, transparent);
+  transform: rotate(-35deg);
+  width: 350px;
+  opacity: 0.6;
+}
+.cp-1 { top: 25%; left: 8%; animation: pathGlow 6s infinite ease-in-out; }
+.cp-2 { top: 60%; right: 12%; animation: pathGlow 8s infinite ease-in-out; }
+.cp-3 { bottom: 25%; left: 15%; animation: pathGlow 7s infinite ease-in-out; }
+
+@keyframes pathGlow {
+  0%, 100% { opacity: 0.2; transform: scaleX(0.8) rotate(-35deg); }
+  50% { opacity: 0.75; transform: scaleX(1.1) rotate(-35deg); }
+}
+
+/* Get Involved Shared Hero Visual Stack (Staggered Stack) */
+.gi-hero-visual-stack {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gi-stack-container {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  height: 480px;
+}
+
+.gi-main-img-wrap {
+  width: 82%;
+  height: 380px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(6, 46, 36, 0.08);
+  border: 1px solid var(--border-color);
+  margin-left: auto;
+  transition: transform 0.5s ease;
+}
+
+.gi-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.gi-stack-container:hover .gi-main-img {
+  transform: scale(1.05);
+}
+
+.gi-sub-img-wrap {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 52%;
+  height: 220px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(6, 46, 36, 0.15);
+  border: 4px solid var(--bg-primary);
+  z-index: 3;
+  transition: transform 0.5s ease;
+}
+
+.gi-sub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gi-stack-container:hover .gi-sub-img-wrap {
+  transform: translateY(-8px) rotate(-1deg);
+}
+
+.gi-stack-container:hover .gi-main-img-wrap {
+  transform: translateY(4px);
+}
+
+/* Reusable Positions for Get Involved Metric Badges */
+.gi-metric-1 {
+  top: 10%;
+  left: -20px;
+  z-index: 4;
+  animation: float 4s ease-in-out infinite;
+}
+
+.gi-metric-2 {
+  bottom: 60px;
+  right: -20px;
+  z-index: 4;
+  animation: float 4s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+/* Media Query adjustment for visual stack */
+@media (max-width: 992px) {
+  .gi-stack-container {
+    max-width: 400px;
+    height: 420px;
+    margin: 0 auto;
+  }
+  .gi-main-img-wrap {
+    height: 320px;
+  }
+  .gi-sub-img-wrap {
+    height: 180px;
+    bottom: 30px;
+  }
+  .gi-metric-1 {
+    left: -10px;
+  }
+  .gi-metric-2 {
+    right: -10px;
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gi-stack-container {
+    max-width: 320px;
+    height: 340px;
+  }
+  .gi-main-img-wrap {
+    height: 260px;
+  }
+  .gi-sub-img-wrap {
+    height: 140px;
+    bottom: 20px;
   }
 }
